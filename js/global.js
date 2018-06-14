@@ -177,7 +177,7 @@ $(document).on("click", ".gotoTop", function(event) {
 
 
 // dashboard js functions start here
-$(".accordProfile").on("click", ".accordLi .toggle", function() {
+$(".accordProfile, .filderDiv").on("click", ".accordLi .toggle", function() {
 
     // if($(this).hasClass('active')){
     //     $('.accordion-header').next().removeClass('active').slideUp();

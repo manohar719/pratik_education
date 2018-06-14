@@ -208,6 +208,9 @@ ul.dropdown li{
   font-size: 32px;
   text-transform: uppercase;
 }
+.logo a img{
+  width: 70%;
+}
 .search{
   display: inline-block;
   padding: 0 10px;

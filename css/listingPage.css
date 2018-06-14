@@ -1,0 +1,194 @@
+.listingPageWrap{
+	margin-bottom: 80px;
+}
+.listingPageWrap .filderDiv{
+	display: block;
+	background-color: #ffffff;
+}
+.listingPageWrap .filderDiv li{
+	display: block;
+	padding: 12px 24px;
+	border-bottom: 1px solid #dadada;
+}
+.listingPageWrap .filderDiv li:last-child{
+	border-bottom: none;
+}
+.listingPageWrap .filderDiv li .inner{
+	display: none;
+	padding: 18px 10px 0;
+}
+.listingPageWrap .filderDiv li .inner a{
+	font-size: 14px;
+	color: #5f5e5e;
+	display: block;
+	padding-bottom: 16px;
+}
+.listingPageWrap .filderDiv li .inner a:first-child {
+	color: #0094aa;
+}
+.listingPageWrap .filderDiv li.active .inner{
+	display: block;
+}
+.listingPageWrap .filderDiv a.toggle{
+	font-size: 16px;
+	color: #5f5e5e;
+	position: relative;
+	display: block;
+}
+.listingPageWrap .filderDiv li a.toggle::after{
+	content: '';
+    position: absolute;
+    display: inline-block;
+    width: 14px;
+    height: 10px;
+    background: url(../images/colorArrow.png) no-repeat;
+    right: 0;
+    top: 8px;
+    transform: rotate(0deg);
+}
+.listingPageWrap .filderDiv li a.toggle.active::after{
+	transform: rotate(180deg);
+}
+
+.listingPageWrap .filderDiv .inner [type="checkbox"]:checked,
+.listingPageWrap .filderDiv .inner [type="checkbox"]:not(:checked),
+.productMainDiv .productDetails .ratingBox .heartCheckbox [type="checkbox"]:checked,
+.productMainDiv .productDetails .ratingBox .heartCheckbox [type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.listingPageWrap .filderDiv .inner [type="checkbox"]:checked + label,
+.listingPageWrap .filderDiv .inner [type="checkbox"]:not(:checked) + label,
+.productMainDiv .productDetails .ratingBox .heartCheckbox [type="checkbox"]:checked + label,
+.productMainDiv .productDetails .ratingBox .heartCheckbox [type="checkbox"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+    margin-top: 18px;
+    font-size: 14px;
+}
+.listingPageWrap .filderDiv .inner [type="checkbox"]:checked + label:before,
+.listingPageWrap .filderDiv .inner [type="checkbox"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #0094aa;
+    background-color: #fff;
+
+}
+.listingPageWrap .filderDiv .inner [type="checkbox"]:checked + label:after,
+.listingPageWrap .filderDiv .inner [type="checkbox"]:not(:checked) + label:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: #0094aa;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    background-image: url(../images/tickmark.png);
+    background-repeat: no-repeat;
+    background-position: 4px 4px;
+}
+.productMainDiv .productDetails .ratingBox .heartCheckbox [type="checkbox"]:checked + label:before,
+.productMainDiv .productDetails .ratingBox .heartCheckbox [type="checkbox"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    background-image: url(../images/emptyHeart.png);
+    background-repeat: no-repeat;
+}
+.productMainDiv .productDetails .ratingBox .heartCheckbox [type="checkbox"]:checked + label:after,
+.productMainDiv .productDetails .ratingBox .heartCheckbox [type="checkbox"]:not(:checked) + label:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    background-image: url(../images/filledHeart.png);
+    background-repeat: no-repeat;
+}
+.listingPageWrap .filderDiv .inner [type="checkbox"]:not(:checked) + label:after,
+.productMainDiv .productDetails .ratingBox .heartCheckbox [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.listingPageWrap .filderDiv .inner [type="checkbox"]:checked + label:after,
+.productMainDiv .productDetails .ratingBox .heartCheckbox [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+/*heart checkbox css end here*/
+
+.listingPageWrap .productMainDiv{
+	padding: 50px 20px;
+	background-color: #ffffff;
+	width: 100%;
+	font-size: 0;
+}
+.listingPageWrap .productMainDiv li{
+	margin-bottom: 20px;
+}
+.listingPageWrap .productMainDiv li .productDetails{
+	padding: 20px;
+	border: 1px solid #dadada;
+}
+.listingPageWrap .productMainDiv li .productDetails h3{
+	color: #0094aa;
+	font-size: 16px;
+	text-align: left;
+	font-weight: 600;
+	padding-bottom:20px;
+}
+.listingPageWrap .productMainDiv li .productDetails p{
+	padding-bottom: 12px;
+	font-size: 14px;
+}
+.listingPageWrap .productMainDiv li .productDetails .buyAmountBox{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #dadada;
+	margin-bottom: 20px;
+}
+.listingPageWrap .productMainDiv li .productDetails .buyAmountBox a{
+	font-size: 14px;
+	color: #ffffff;
+	background-color: #0094aa;
+	padding: 5px 0;
+	width: 70px;
+	text-align: center;
+}
+
+.listingPageWrap .productMainDiv li .productDetails .buyAmountBox span{
+	display: inline-block;
+	float: right;
+	font-weight: 600;
+	font-size: 16px;
+}
+.listingPageWrap .productMainDiv li .productDetails .ratingBox a,
+.listingPageWrap .productMainDiv li .productDetails .ratingBox .heartCheckbox,
+.listingPageWrap .productMainDiv li .productDetails .ratingBox .ratingPng{
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 5px;
+}
+.listingPageWrap .productMainDiv li .productDetails .ratingBox .ratingPng{
+	float: right;
+	padding-right: 0;
+}

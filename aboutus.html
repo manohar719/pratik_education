@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/aboutus.css">
    
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -82,162 +83,31 @@
             </div>
         </div>
     </header>
-    <div class="breadcumBox">
+    <div class="aboutUsWrap">
+        <div class="container-fluid">
+            <div class="row">
+                <picture>
+                    <img src="images/aboutusBanner.jpg">
+                </picture>
+                <div class="bannerText">
+                    <h3>LOREM IPSUM</h3>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
-                <ul class="col-md-12">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                </ul>
-            </div>
-        </div>
-        
-    </div>
-    <div class="dashboardwrap">
-    	<div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="profileMainBox">
-                        <div class="profileImgBox">
-                            <figure>
-                                <img src="images/profile.jpg"/>
-                            </figure>
-                            <input type="file" name="file" class="bg_uploadPng"/>
-                            <figcaption>Suraj S Kumar</figcaption>
-                        </div>
-                        <ul class="accordProfile">
-                            <li class="accordLi">
-                                <a href="#" class="toggle active">Account Settings</a>
-                                <div class="inner" style="display: block;">
-                                    <a href="#">My Profile</a>
-                                    <a href="#">Change Password</a>
-                                </div>
-                            </li>
-                            
-                            <li class="accordLi">
-                                <a href="#" class="toggle">My Orders</a>
-                                <div class="inner">
-                                    <a href="#">My Profile</a>
-                                    <a href="#">Change Password</a>
-                                </div>
-                            </li>
-                            
-                            <li class="accordLi">
-                                <a href="#" class="toggle">Payments</a>
-                                <div class="inner">
-                                    <a href="#">My Profile</a>
-                                    <a href="#">Change Password</a>
-                                </div>
-                            </li>
-                            
-                            <li class="accordLi">
-                                <a href="#" class="toggle">My Stuff</a>
-                                <div class="inner">
-                                    <a href="#">My Profile</a>
-                                    <a href="#">Change Password</a>
-                                </div>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                	
-                </div>
-                <div class="col-md-9 ">
-                    <div class="userDetailsMainBox">
-                        <h3>Personal Information</h3>
-                    <div id="" class="col-md-6 form-group">
-                        <input id="firstname" class="form-control" name="firstname" type="text" size="18" at="firstname" required="">
-                        <span class="form-highlight"></span>
-                        <span class="form-bar"></span>
-                        <div class="errorMsg">Please enter First Name</div>
-                        <label for="firstname" class="float-label">First Name</label>
-                    </div>
-                    <div id="" class="col-md-6 form-group">
-                        <input id="lastname" class="form-control" name="lastname" type="text" size="18" at="lastname" required="">
-                        <span class="form-highlight"></span>
-                        <span class="form-bar"></span>
-                        <div class="errorMsg">Please enter Last Name</div>
-                        <label for="lastname" class="float-label">Last Name</label>
-                    </div>
-                    <div id="" class="col-xs-12 form-group radio-form-group">
-                        <span>Your Gender</span>
-                        <input type="radio" name="gender" id="male" value="Male" checked>
-                        <label for="male">Male</label>
-                        <input type="radio" name="gender" id="female" value="Female">
-                        <label for="female">Female</label>
-                    </div>
-
-                    <div id="" class="col-xs-12 form-group">
-                        <input id="email" class="form-control" name="email" type="text" size="18" at="email" required="">
-                        <span class="form-highlight"></span>
-                        <span class="form-bar"></span>
-                        <div class="errorMsg">Please enter Email Address</div>
-                        <label for="email" class="float-label">Email Address</label>
-                    </div>
-
-                    <div id="" class="col-xs-12 form-group">
-                        <input id="password" class="form-control" name="password" type="password" size="18" at="password" required="">
-                        <span class="form-highlight"></span>
-                        <span class="form-bar"></span>
-                        <div class="errorMsg">Be at least 4 characters</div>
-                        <label for="password" class="float-label">Password</label>
-                    </div>
-
-                    <div id="" class="col-xs-12 form-group">
-                        <input id="mobile" class="form-control" name="mobile" type="text" size="18" at="mobile" required="">
-                        <a href="#">Update</a>
-                        <span class="form-highlight"></span>
-                        <span class="form-bar"></span>
-                        <div class="errorMsg">Please enter mobile number</div>
-                        <label for="mobile" class="float-label">Mobile Number</label>
-                    </div>
-                    <h3>Manage Addresses</h3>
-                    <div id="" class="col-md-6 form-group">
-                        <input id="username" class="form-control" name="pincode" type="text" size="18" at="pincode" required="">
-                        <span class="form-highlight"></span>
-                        <span class="form-bar"></span>
-                        <div class="errorMsg">Please enter Pincode</div>
-                        <label for="pincode" class="float-label">Pincode</label>
-                    </div>
-                    <div id="" class="col-md-6 form-group">
-                        <input id="locality" class="form-control" name="locality" type="text" size="18" at="locality" required="">
-                        <span class="form-highlight"></span>
-                        <span class="form-bar"></span>
-                        <div class="errorMsg">Please enter locality</div>
-                        <label for="locality" class="float-label">Locality</label>
-                    </div>
-                    <div id="" class="col-xs-12 form-group form-group-address">
-                        <input id="address" class="form-control" name="address" type="text" size="18" at="address" required="">
-                        <span class="form-highlight"></span>
-                        <span class="form-bar"></span>
-                        <div class="errorMsg">Please enter address</div>
-                        <label for="address" class="float-label">Address</label>
-                    </div>
-                    <div id="" class="col-md-6 form-group selectDrp">
-                        <select>
-                          <option value="">City/District/Town</option>
-                          <option value="mumbai">Mumbai</option>
-                          <option value="Hyderabad">Hyderabad</option>
-                          <option value="Delhi">Delhi</option>
-                        </select>
-                    </div>
-                    <div id="" class="col-md-6 form-group selectDrp">
-                        <select>
-                          <option value="">State</option>
-                              <option value="Maharashtra">Maharashtra</option>
-                              <option value="Telangana">Telangana</option>
-                              <option value="Delhi">Delhi</option>
-                            </select>
-                        </select>
-                    </div>
-                    <div class="buttonBox">
-                        <button>Save</button>
-                    </div>
-                    </div>
+                <h2>ABOUT US</h2>
+                <div class="aboutusTextWrap">
+                    <h3>The Mission</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing softwarelike Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <h3>Our Story</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software</p>
                 </div>
             </div>
         </div>
     </div>
+    
     <footer>
         <div class="container">
             <div class="row">

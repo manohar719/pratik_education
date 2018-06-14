@@ -24,7 +24,7 @@
 /*breadcum css end here*/
 
 .dashboardwrap{
-	margin: 20px 0;
+	margin: 10px 0 20px;
 }
 .dashboardwrap .profileMainBox{
 	background-color: #ffffff;
@@ -251,7 +251,7 @@
     width: 14px;
     height: 10px;
     background: url(../images/downArrow.png) no-repeat;
-    right: 38%;
+    right: 34%;
     bottom: 8px;
     pointer-events: none; 
 }

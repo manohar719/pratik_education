@@ -310,6 +310,64 @@ footer{
 .m-sideLinks{
     width: 50%;
 }
+
+/*dashboard css start here*/
+.dashboardwrap .profileMainBox{
+    padding-top: 25px;
+}
+.dashboardwrap .profileMainBox .profileImgBox {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.dashboardwrap .profileMainBox .profileImgBox figure{
+    width:120px;
+    height:120px;
+}
+.dashboardwrap .profileMainBox .profileImgBox input[type=file]:after{
+    right: 36%;
+    top: 50%;
+}
+.dashboardwrap .userDetailsMainBox{
+    margin-top: 20px;
+    padding: 0 24px 30px;
+}
+.dashboardwrap .form-group a{
+    left: 62%;
+}
+.dashboardwrap .form-group.selectDrp{
+    display: table;
+}
+.dashboardwrap .form-group.selectDrp::after{
+    right: 2%;
+}
+
+/*dashboard css end here*/
+
+/*aboutus css start here*/
+
+.aboutUsWrap .bannerText h3{
+    font-size: 25px;
+    font-weight: bold;
+    color: #0094aa;
+}
+.aboutUsWrap h2{
+    padding: 20px 0;
+}
+.aboutUsWrap .aboutusTextWrap{
+    padding: 15px 15px 0;
+    margin-bottom: 30px;
+}
+.aboutUsWrap .aboutusTextWrap h3{
+    padding-bottom: 10px;
+}
+.aboutUsWrap .aboutusTextWrap p{
+    text-align: justify;
+    padding-bottom: 20px;
+}
+/*aboutus css end here*/
+.logo a img {
+    width: 100%;
+}
 } 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
