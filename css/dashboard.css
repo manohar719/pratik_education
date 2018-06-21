@@ -1,6 +1,6 @@
 /*breadcum css start here*/
 .breadcumBox{
-	margin: 20px 0;
+	padding: 10px 0;
 }
 .breadcumBox ul li{
 	padding-right: 16px;
@@ -24,7 +24,7 @@
 /*breadcum css end here*/
 
 .dashboardwrap{
-	margin: 10px 0 20px;
+	margin-bottom: 20px;
 }
 .dashboardwrap .profileMainBox{
 	background-color: #ffffff;

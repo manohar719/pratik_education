@@ -88,7 +88,7 @@
             <div class="row">
                 <ul class="col-md-12">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Products</a></li>
                 </ul>
             </div>
         </div>
@@ -99,6 +99,11 @@
             <div class="row">
                 <div class="col-md-3">
                     <ul class="filderDiv">
+                        <li class="accordLi">
+                            <a href="#" class="anchrFilter">
+                                Filters
+                            </a>
+                        </li>
                         <li class="accordLi">
                             <a href="#" class="toggle active">Board</a>
                                 <div class="inner" style="display: block;">
@@ -228,170 +233,124 @@
                     </ul>
                 </div>
                 <div class="col-md-9">
-                    <ul class="productMainDiv">
-                        <li class="col-md-4">
-                            <picture>
-                                <img src="images/product.png">
-                            </picture>
-                            <div class="productDetails">
-                                <h3>SSC- English Board Paper</h3>
-                                <p><strong>Year :</strong> <span>2017</span></p>
-                                <p><strong>Medium :</strong> <span>English</span></p>
-                                <p><strong>Topper :</strong> <span>Pratik Moda</span></p>
-                                <div class="buyAmountBox">
-                                    <a href="#">Buy Now</a>
-                                    <span class="amount">&#8377; 49</span>
-                                </div>
-                                <div class="ratingBox">
-                                    <a href="#">
-                                        <img src="images/add-cart.png">
-                                    </a>
-                                    <div class="heartCheckbox">
-                                        <input type="checkbox" name="heart" id="heart" value="heart" checked>
-                                        <label for="heart"></label>
+                    <div class="productMainDiv">
+                        <p class="paggingPara">Showing 1 to 20 of 100</p>
+                        <ul>
+                            <li class="col-md-4 col-xs-6">
+                                <picture>
+                                    <img src="images/product.png">
+                                </picture>
+                                <div class="productDetails">
+                                    <h3>SSC- English Board Paper</h3>
+                                    <p><strong>Year :</strong> <span>2017</span></p>
+                                    <p><strong>Medium :</strong> <span>English</span></p>
+                                    <p><strong>Topper :</strong> <span>Pratik Moda</span></p>
+                                    <div class="buyAmountBox">
+                                        <a href="#">Buy Now</a>
+                                        <span class="amount">&#8377; <span>49</span></span>
                                     </div>
-                                    <div class="ratingPng">
-                                        <img src="images/rate4half.png"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-md-4">
-                            <picture>
-                                <img src="images/product.png">
-                            </picture>
-                            <div class="productDetails">
-                                <h3>SSC- English Board Paper</h3>
-                                <p><strong>Year :</strong> <span>2017</span></p>
-                                <p><strong>Medium :</strong> <span>English</span></p>
-                                <p><strong>Topper :</strong> <span>Pratik Moda</span></p>
-                                <div class="buyAmountBox">
-                                    <a href="#">Buy Now</a>
-                                    <span class="amount">&#8377; 49</span>
-                                </div>
-                                <div class="ratingBox">
-                                    <a href="#">
-                                        <img src="images/add-cart.png">
-                                    </a>
-                                    <div class="heartCheckbox">
-                                        <input type="checkbox" name="heart" id="heart" value="heart" checked>
-                                        <label for="heart"></label>
-                                    </div>
-                                    <div class="ratingPng">
-                                        <img src="images/rate4half.png"/>
+                                    <div class="ratingBox">
+                                        <div class="cartCheckbox">
+                                            <input type="checkbox" name="cart" id="cart" value="cart">
+                                            <label for="cart"></label>
+                                        </div>
+                                        <div class="heartCheckbox">
+                                            <input type="checkbox" name="heart" id="heart" value="heart">
+                                            <label for="heart"></label>
+                                        </div>
+                                        <div class="ratingPng">
+                                            <img src="images/rate4half.png"/>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="col-md-4">
-                            <picture>
-                                <img src="images/product.png">
-                            </picture>
-                            <div class="productDetails">
-                                <h3>SSC- English Board Paper</h3>
-                                <p><strong>Year :</strong> <span>2017</span></p>
-                                <p><strong>Medium :</strong> <span>English</span></p>
-                                <p><strong>Topper :</strong> <span>Pratik Moda</span></p>
-                                <div class="buyAmountBox">
-                                    <a href="#">Buy Now</a>
-                                    <span class="amount">&#8377; 49</span>
-                                </div>
-                                <div class="ratingBox">
-                                    <a href="#">
-                                        <img src="images/add-cart.png">
-                                    </a>
-                                    <div class="heartCheckbox">
-                                        <input type="checkbox" name="heart" id="heart" value="heart" checked>
-                                        <label for="heart"></label>
+                            </li>
+                            <li class="col-md-4 col-xs-6">
+                                <picture>
+                                    <img src="images/product.png">
+                                </picture>
+                                <div class="productDetails">
+                                    <h3>SSC- English Board Paper</h3>
+                                    <p><strong>Year :</strong> <span>2017</span></p>
+                                    <p><strong>Medium :</strong> <span>English</span></p>
+                                    <p><strong>Topper :</strong> <span>Pratik Moda</span></p>
+                                    <div class="buyAmountBox">
+                                        <a href="#">Buy Now</a>
+                                        <span class="amount">&#8377; <span>49</span></span>
                                     </div>
-                                    <div class="ratingPng">
-                                        <img src="images/rate4half.png"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-md-4">
-                            <picture>
-                                <img src="images/product.png">
-                            </picture>
-                            <div class="productDetails">
-                                <h3>SSC- English Board Paper</h3>
-                                <p><strong>Year :</strong> <span>2017</span></p>
-                                <p><strong>Medium :</strong> <span>English</span></p>
-                                <p><strong>Topper :</strong> <span>Pratik Moda</span></p>
-                                <div class="buyAmountBox">
-                                    <a href="#">Buy Now</a>
-                                    <span class="amount">&#8377; 49</span>
-                                </div>
-                                <div class="ratingBox">
-                                    <a href="#">
-                                        <img src="images/add-cart.png">
-                                    </a>
-                                    <div class="heartCheckbox">
-                                        <input type="checkbox" name="heart" id="heart" value="heart" checked>
-                                        <label for="heart"></label>
-                                    </div>
-                                    <div class="ratingPng">
-                                        <img src="images/rate4half.png"/>
+                                    <div class="ratingBox">
+                                        <div class="cartCheckbox">
+                                            <input type="checkbox" name="cart" id="cart" value="cart">
+                                            <label for="cart"></label>
+                                        </div>
+                                        <div class="heartCheckbox">
+                                            <input type="checkbox" name="heart" id="heart" value="heart" >
+                                            <label for="heart"></label>
+                                        </div>
+                                        <div class="ratingPng">
+                                            <img src="images/rate4half.png"/>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="col-md-4" >
-                            <picture>
-                                <img src="images/product.png">
-                            </picture>
-                            <div class="productDetails">
-                                <h3>SSC- English Board Paper</h3>
-                                <p><strong>Year :</strong> <span>2017</span></p>
-                                <p><strong>Medium :</strong> <span>English</span></p>
-                                <p><strong>Topper :</strong> <span>Pratik Moda</span></p>
-                                <div class="buyAmountBox">
-                                    <a href="#">Buy Now</a>
-                                    <span class="amount">&#8377; 49</span>
-                                </div>
-                                <div class="ratingBox">
-                                    <a href="#">
-                                        <img src="images/add-cart.png">
-                                    </a>
-                                    <div class="heartCheckbox">
-                                        <input type="checkbox" name="heart" id="heart" value="heart" checked>
-                                        <label for="heart"></label>
+                            </li>
+                            <li class="col-md-4 col-xs-6">
+                                <picture>
+                                    <img src="images/product.png">
+                                </picture>
+                                <div class="productDetails">
+                                    <h3>SSC- English Board Paper</h3>
+                                    <p><strong>Year :</strong> <span>2017</span></p>
+                                    <p><strong>Medium :</strong> <span>English</span></p>
+                                    <p><strong>Topper :</strong> <span>Pratik Moda</span></p>
+                                    <div class="buyAmountBox">
+                                        <a href="#">Buy Now</a>
+                                        <span class="amount">&#8377; <span>49</span></span>
                                     </div>
-                                    <div class="ratingPng">
-                                        <img src="images/rate4half.png"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-md-4">
-                            <picture>
-                                <img src="images/product.png">
-                            </picture>
-                            <div class="productDetails">
-                                <h3>SSC- English Board Paper</h3>
-                                <p><strong>Year :</strong> <span>2017</span></p>
-                                <p><strong>Medium :</strong> <span>English</span></p>
-                                <p><strong>Topper :</strong> <span>Pratik Moda</span></p>
-                                <div class="buyAmountBox">
-                                    <a href="#">Buy Now</a>
-                                    <span class="amount">&#8377; 49</span>
-                                </div>
-                                <div class="ratingBox">
-                                    <a href="#">
-                                        <img src="images/add-cart.png">
-                                    </a>
-                                    <div class="heartCheckbox">
-                                        <input type="checkbox" name="heart" id="heart" value="heart" checked>
-                                        <label for="heart"></label>
-                                    </div>
-                                    <div class="ratingPng">
-                                        <img src="images/rate4half.png"/>
+                                    <div class="ratingBox">
+                                        <div class="cartCheckbox">
+                                            <input type="checkbox" name="cart" id="cart" value="cart">
+                                            <label for="cart"></label>
+                                        </div>
+                                        <div class="heartCheckbox">
+                                            <input type="checkbox" name="heart" id="heart" value="heart">
+                                            <label for="heart"></label>
+                                        </div>
+                                        <div class="ratingPng">
+                                            <img src="images/rate4half.png"/>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                            <li class="col-md-4 col-xs-6">
+                                <picture>
+                                    <img src="images/product.png">
+                                </picture>
+                                <div class="productDetails">
+                                    <h3>SSC- English Board Paper</h3>
+                                    <p><strong>Year :</strong> <span>2017</span></p>
+                                    <p><strong>Medium :</strong> <span>English</span></p>
+                                    <p><strong>Topper :</strong> <span>Pratik Moda</span></p>
+                                    <div class="buyAmountBox">
+                                        <a href="#">Buy Now</a>
+                                        <span class="amount">&#8377; 49</span>
+                                    </div>
+                                    <div class="ratingBox">
+                                        <div class="cartCheckbox">
+                                            <input type="checkbox" name="cart" id="cart" value="cart" checked>
+                                            <label for="cart"></label>
+                                        </div>
+                                        <div class="heartCheckbox">
+                                            <input type="checkbox" name="heart" id="heart" value="heart" checked>
+                                            <label for="heart"></label>
+                                        </div>
+                                        <div class="ratingPng">
+                                            <img src="images/rate4half.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

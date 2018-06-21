@@ -365,6 +365,97 @@ footer{
     padding-bottom: 20px;
 }
 /*aboutus css end here*/
+
+/*listingpage css start here*/
+
+.listingPageWrap{
+    margin-bottom: 10px;
+}
+.listingPageWrap .filderDiv{
+    margin-bottom: 0;
+}
+.listingPageWrap .filderDiv li{
+    display: none;
+    border: none;
+}
+.listingPageWrap .filderDiv li:first-child{
+    display: block;
+    text-align: right;
+}
+.productMainDiv p.paggingPara{
+    display: none;
+}
+.listingPageWrap .productMainDiv{
+    padding: 0;
+}
+.listingPageWrap .productMainDiv ul{
+    text-align: center;
+}
+
+.listingPageWrap .productMainDiv li .productDetails{
+    padding: 10px 10px 0;
+}
+.listingPageWrap .productMainDiv li .productDetails h3{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.listingPageWrap .productMainDiv li .productDetails p{
+    font-size: 12px;
+    text-align: left;
+    padding-bottom: 8px;
+}
+.listingPageWrap .productMainDiv li .productDetails p span{
+    font-size: 12px;
+}
+.listingPageWrap .productMainDiv li .productDetails .buyAmountBox{
+    text-align: left;
+}
+.listingPageWrap .productMainDiv li .productDetails .ratingBox{
+    text-align: left;
+}
+.listingPageWrap .filderDiv .inner [type="checkbox"]:checked + label, 
+.listingPageWrap .filderDiv .inner [type="checkbox"]:not(:checked) + label, 
+.productMainDiv .productDetails .ratingBox .cartCheckbox [type="checkbox"]:checked + label, 
+.productMainDiv .productDetails .ratingBox .cartCheckbox [type="checkbox"]:not(:checked) + label, 
+.productMainDiv .productDetails .ratingBox .heartCheckbox [type="checkbox"]:checked + label, 
+.productMainDiv .productDetails .ratingBox .heartCheckbox [type="checkbox"]:not(:checked) + label{
+    padding-left: 22px;
+}
+.productMainDiv .productDetails .ratingBox .cartCheckbox [type="checkbox"]:checked + label:before,
+.productMainDiv .productDetails .ratingBox .cartCheckbox [type="checkbox"]:not(:checked) + label:before {
+    background-image: url(../images/uncheckedCartMob.png);
+    width: 16px;
+    height: 15px;
+}
+.productMainDiv .productDetails .ratingBox .cartCheckbox [type="checkbox"]:checked + label:after,
+.productMainDiv .productDetails .ratingBox .cartCheckbox [type="checkbox"]:not(:checked) + label:after {
+    background-image: url(../images/checkedCartMob.png);
+    width: 16px;
+    height: 15px;
+}
+.productMainDiv .productDetails .ratingBox .heartCheckbox [type="checkbox"]:checked + label:before,
+.productMainDiv .productDetails .ratingBox .heartCheckbox [type="checkbox"]:not(:checked) + label:before {
+    background-image: url(../images/emptyHeartMob.png);
+}
+.productMainDiv .productDetails .ratingBox .heartCheckbox [type="checkbox"]:checked + label:after,
+.productMainDiv .productDetails .ratingBox .heartCheckbox [type="checkbox"]:not(:checked) + label:after {
+    background-image: url(../images/filledHeartMob.png);
+}
+
+.listingPageWrap .productMainDiv li .productDetails .buyAmountBox{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.listingPageWrap .productMainDiv li .productDetails .buyAmountBox a{
+    font-size: 12px;
+}
+.listingPageWrap .productMainDiv li .productDetails .buyAmountBox span{
+    font-size: 14px;
+}
+.listingPageWrap .productMainDiv li .productDetails .ratingBox .ratingPng{
+    width: 80px;
+}
+/*listingpage css end here*/
 .logo a img {
     width: 100%;
 }
