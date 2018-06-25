@@ -191,3 +191,12 @@ $(".accordProfile, .filderDiv").on("click", ".accordLi .toggle", function() {
        $(this).parent().siblings('li').find("a").removeClass('active')
  });
 // dashboard js functions end here
+
+// tab section for filter start here
+$("ul.tabfilterUl li").click(function(e) {
+        e.preventDefault();
+        var tab_index = $(this).index();
+        console.log(tab_index), $("ul.tabfilterUl li").removeClass("current"), $(".tab-content").removeClass("current"), 
+        $(this).addClass("current"), $(".tab-content").eq(tab_index).addClass("current");
+    });
+// tab section for filter start here

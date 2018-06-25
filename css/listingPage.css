@@ -10,6 +10,9 @@
 	padding: 12px 24px;
 	border-bottom: 1px solid #dadada;
 }
+.listingPageWrap .filderDiv li:first-child{
+    pointer-events: none;
+}
 .listingPageWrap .filderDiv li:last-child{
 	border-bottom: none;
 }
@@ -70,6 +73,8 @@
 
 .listingPageWrap .filderDiv .inner [type="checkbox"]:checked,
 .listingPageWrap .filderDiv .inner [type="checkbox"]:not(:checked),
+.filterPopup .tabFilterContent .tab-content .checkboxDiv [type="checkbox"]:checked,
+.filterPopup .tabFilterContent .tab-content .checkboxDiv [type="checkbox"]:not(:checked),
 .productMainDiv .productDetails .ratingBox .cartCheckbox [type="checkbox"]:checked,
 .productMainDiv .productDetails .ratingBox .cartCheckbox [type="checkbox"]:not(:checked),
 .productMainDiv .productDetails .ratingBox .heartCheckbox [type="checkbox"]:checked,
@@ -79,6 +84,8 @@
 }
 .listingPageWrap .filderDiv .inner [type="checkbox"]:checked + label,
 .listingPageWrap .filderDiv .inner [type="checkbox"]:not(:checked) + label,
+.filterPopup .tabFilterContent .tab-content .checkboxDiv [type="checkbox"]:checked + label,
+.filterPopup .tabFilterContent .tab-content .checkboxDiv [type="checkbox"]:not(:checked) + label,
 .productMainDiv .productDetails .ratingBox .cartCheckbox [type="checkbox"]:checked + label,
 .productMainDiv .productDetails .ratingBox .cartCheckbox [type="checkbox"]:not(:checked) + label,
 .productMainDiv .productDetails .ratingBox .heartCheckbox [type="checkbox"]:checked + label,
@@ -94,7 +101,9 @@
     font-size: 14px;
 }
 .listingPageWrap .filderDiv .inner [type="checkbox"]:checked + label:before,
-.listingPageWrap .filderDiv .inner [type="checkbox"]:not(:checked) + label:before {
+.listingPageWrap .filderDiv .inner [type="checkbox"]:not(:checked) + label:before,
+.filterPopup .tabFilterContent .tab-content .checkboxDiv [type="checkbox"]:checked + label:before, 
+.filterPopup .tabFilterContent .tab-content .checkboxDiv [type="checkbox"]:not(:checked) + label:before{
     content: '';
     position: absolute;
     left: 0;
@@ -106,7 +115,9 @@
 
 }
 .listingPageWrap .filderDiv .inner [type="checkbox"]:checked + label:after,
-.listingPageWrap .filderDiv .inner [type="checkbox"]:not(:checked) + label:after {
+.listingPageWrap .filderDiv .inner [type="checkbox"]:not(:checked) + label:after,
+.filterPopup .tabFilterContent .tab-content .checkboxDiv [type="checkbox"]:checked + label:after,
+.filterPopup .tabFilterContent .tab-content .checkboxDiv [type="checkbox"]:not(:checked) + label:after {
     content: '';
     width: 18px;
     height: 18px;
@@ -176,6 +187,7 @@
     background-repeat: no-repeat;
 }
 .listingPageWrap .filderDiv .inner [type="checkbox"]:not(:checked) + label:after,
+.filterPopup .tabFilterContent .tab-content .checkboxDiv [type="checkbox"]:not(:checked) + label:after,
 .productMainDiv .productDetails .ratingBox .cartCheckbox [type="checkbox"]:not(:checked) + label:after,
 .productMainDiv .productDetails .ratingBox .heartCheckbox [type="checkbox"]:not(:checked) + label:after {
     opacity: 0;
@@ -183,7 +195,8 @@
     transform: scale(0);
 }
 .listingPageWrap .filderDiv .inner [type="checkbox"]:checked + label:after,
-.productMainDiv .productDetails .ratingBox .cartCheckbox [type="checkbox"]:checked + label:after
+.filterPopup .tabFilterContent .tab-content .checkboxDiv [type="checkbox"]:checked + label:after,
+.productMainDiv .productDetails .ratingBox .cartCheckbox [type="checkbox"]:checked + label:after,
 .productMainDiv .productDetails .ratingBox .heartCheckbox [type="checkbox"]:checked + label:after {
     opacity: 1;
     -webkit-transform: scale(1);

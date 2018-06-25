@@ -100,7 +100,7 @@
                 <div class="col-md-3">
                     <ul class="filderDiv">
                         <li class="accordLi">
-                            <a href="#" class="anchrFilter">
+                            <a href="#" class="js-popup anchrFilter" data-target="js-filterPopup">
                                 Filters
                             </a>
                         </li>
@@ -385,6 +385,136 @@
                 <div class="col-xs-12">
                     <div class="copy-right">
                         <p>Copyright &copy; 2018 Modas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-wrapper filterPopup js-filterPopup">
+            <div class="modal">
+                <div class="head">
+                <p><strong>Filter</strong> </p>
+                    <a class="btn-close js-closePopup" href="javascript:;"></a>
+                </div>
+                <div class="content filter">
+                    <ul class="tabfilterUl">
+                		<li class="current"><a href="#">Board</a></li>
+                		<li><a href="#">Standard</a></li>
+                		<li><a href="#">Year</a></li>
+                		<li><a href="#">Medium</a></li>
+                		<li><a href="#">Topper</a></li>
+                		<li><a href="#">Subject</a></li>
+                	</ul>
+                	<div class="tabFilterContent">
+						<div class="tab-content current">
+							<div class="checkboxDiv">
+                                <input type="checkbox" name="mobboard" id="mobHSC" value="mobHSC" checked>
+                                <label for="HSC">HSC</label>
+                            </div>
+                            <div class="checkboxDiv">
+                                <input type="checkbox" name="mobboard" id="mobSSC" value="mobSSC">
+                                <label for="mobSSC">SSC</label>
+                            </div>
+                            <div class="checkboxDiv">
+                                <input type="checkbox" name="mobboard" id="mobICSC" value="mobICSC">
+                                <label for="mobICSC">ICSC</label>
+                            </div>
+                            <div class="checkboxDiv">
+                                <input type="checkbox" name="mobboard" id="mobCBSE" value="mobCBSE">
+                                <label for="mobCBSE">CBSE</label>
+                            </div>
+						</div>
+						<div class="tab-content">
+							<div class="checkboxDiv">
+                                <input type="checkbox" name="mobstandard" id="mobtwelth" value="mobtwelth" checked>
+                                <label for="mobtwelth">12<sup>th</sup> Class</label>
+                            </div>
+                            <div class="checkboxDiv">
+                                <input type="checkbox" name="mobstandard" id="mobSSC" value="mobSSC">
+                                <label for="mobeleventh">11<sup>th</sup> Class</label>
+                            </div>
+                            <div class="checkboxDiv">
+                                <input type="checkbox" name="mobstandard" id="mobtenth" value="mobtenth">
+                                <label for="mobtenth">10<sup>th</sup> Class</label>
+                            </div>
+                            <div class="checkboxDiv">
+                                <input type="checkbox" name="mobstandard" id="mobninth" value="mobninth">
+                                <label for="mobninth">9<sup>th</sup> Class</label>
+                            </div>
+						</div>
+						<div class="tab-content">
+							<div class="checkboxDiv">
+	                            <input type="checkbox" name="mobboard" id="mob2018" value="mob2018" checked>
+	                            <label for="mob2018">2018</label> 
+	                        </div>
+	                        <div class="checkboxDiv">
+	                            <input type="checkbox" name="mobboard" id="mob2017" value="mob2017">
+	                            <label for="mob2017">2017</label>
+	                        </div>
+	                        <div class="checkboxDiv">
+	                            <input type="checkbox" name="mobboard" id="mob2016" value="mob2016">
+	                            <label for="mob2016">2016</label>
+	                        </div>
+	                        <div class="checkboxDiv">
+	                            <input type="checkbox" name="board" id="mob2015" value="mob2015">
+	                            <label for="mob2015">2015</label>
+	                        </div>
+						</div>
+						<div class="tab-content">
+							<div class="checkboxDiv">
+	                            <input type="checkbox" name="medium" id="mobenglish" value="mobenglish" checked>
+	                            <label for="mobenglish">English</label> 
+	                        </div>
+	                        <div class="checkboxDiv">
+	                            <input type="checkbox" name="medium" id="Hindi" value="Hindi">
+	                            <label for="Hindi">Hindi</label>
+	                        </div>
+	                        <div class="checkboxDiv">
+	                            <input type="checkbox" name="medium" id="Marathi" value="Marathi">
+	                            <label for="Marathi">Marathi</label>
+	                        </div>
+						</div>
+						<div class="tab-content">
+							<div class="checkboxDiv">
+                                <input type="checkbox" name="mobtopper" id="mobfirst" value="mobfirst" checked>
+                                <label for="mobfirst">1<sup>st</sup> Topper</label> 
+                            </div>
+                            <div class="checkboxDiv">
+                                <input type="checkbox" name="mobtopper" id="mobsecond" value="mobsecond">
+                                <label for="mobsecond">2<sup>st</sup> Topper</label>
+                            </div>
+                            <div class="checkboxDiv">
+                                <input type="checkbox" name="mobtopper" id="mobthird" value="mobthird">
+                                <label for="mobthird">3<sup>st</sup> Topper</label>
+                            </div>				
+                        </div>
+                        <div class="tab-content">
+							 <div class="checkboxDiv">
+                                <input type="checkbox" name="mobsubject" id="mobEnglish" value="mobEnglish" checked>
+                                <label for="mobEnglish">English</label> 
+                            </div>
+                            <div class="checkboxDiv">
+                                <input type="checkbox" name="mobsubject" id="mobHindi" value="mobHindi">
+                                <label for="mobHindi">Hindi</label>
+                            </div>
+                            <div class="checkboxDiv">
+                                <input type="checkbox" name="mobsubject" id="mobMarathi" value="mobMarathi">
+                                <label for="mobMarathi">Marathi</label>
+                            </div>
+                            <div class="checkboxDiv">
+                                <input type="checkbox" name="mobsubject" id="mobMaths" value="mobMaths">
+                                <label for="mobMaths">Maths</label>
+                            </div>
+                            <div class="checkboxDiv">
+                                <input type="checkbox" name="mobsubject" id="mobScience" value="mobScience">
+                                <label for="mobScience">Science</label>
+                            </div>				
+                        </div>
+                    </div>
+                	<div class="ClearApplyBtn">
+                        <div class="btns-warp clearfix">
+                            <button class="btns clearBtn">Clear</button>
+                            <button class="btns applyNowBtn pull-right">Apply</button>
+                        </div>
                     </div>
                 </div>
             </div>

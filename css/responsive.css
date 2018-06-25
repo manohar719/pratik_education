@@ -381,6 +381,7 @@ footer{
 .listingPageWrap .filderDiv li:first-child{
     display: block;
     text-align: right;
+    pointer-events: all;
 }
 .productMainDiv p.paggingPara{
     display: none;
@@ -456,6 +457,113 @@ footer{
     width: 80px;
 }
 /*listingpage css end here*/
+/*filter pop css start here*/
+.modal-wrapper.filterPopup.open .modal{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: relative;;
+}
+.modal-wrapper.filterPopup.open .modal:after{
+  content:'';
+  position:absolute;
+  width: 1px;
+  height:100%;
+  background: #fff;
+  z-index:0;
+  left: 49.8%;
+  border-left: 1px solid #e1e1e1;
+}
+.filterPopup .head{
+    padding: 14px 14px 14px 20px;
+}
+.filterPopup .head p{
+    padding-left: 24px;
+    position: relative;
+}
+.filterPopup .head p strong{
+    font-size: 14px;
+    text-transform: none;
+    font-weight: 600;
+}
+.filterPopup .head p:before{
+    content: '';
+    background: url(../images/mobfilter.png) no-repeat;
+    height: 19px;
+    width: 17px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+.filterPopup .ClearApplyBtn .btns-warp{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.filterPopup .content{
+    padding: 0;
+    width: 100%;
+    font-size: 0;
+    border-top: 1px solid #e1e1e1;
+}
+.filterPopup .content .tabfilterUl,
+.filterPopup .content .tabFilterContent{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+.filterPopup .content .tabfilterUl li{
+    display: block;
+    padding: 14px;
+    border-bottom: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+    position: relative;
+}
+
+.filterPopup .content .tabfilterUl li.current{
+    border-right: none;  
+}
+.filterPopup .content .tabfilterUl li.current:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 7px;
+    left: 0;
+    background: #0094aa;
+    height: 100%;
+    transition: all 0.3s ease;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+.filterPopup .content .tabfilterUl li a{
+    font-size: 14px;
+    color: #727171;
+}
+.filterPopup .tabFilterContent .tab-content{
+    display: none;
+}
+.filterPopup .tabFilterContent .tab-content.current{
+    display: block;
+}
+.filterPopup .ClearApplyBtn .btns-warp button{
+    width: 50%;
+    margin-left: 0;
+    padding: 13px 5px;
+    color: #727171;
+    font-size: 14px;
+    background-color: #ffffff;
+    border-top: 1px solid #e1e1e1;
+}
+.filterPopup .ClearApplyBtn .btns-warp button.applyNowBtn{
+    background-color: #00a4b9;
+    color: #ffffff;
+}
+
+.filterPopup .content .tabFilterContent{
+    padding: 14px;
+}
+/*filter pop css end here*/
 .logo a img {
     width: 100%;
 }
